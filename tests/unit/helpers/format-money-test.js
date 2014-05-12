@@ -1,6 +1,6 @@
 import {test} from 'ember-qunit';
-import formatMoneyHelper from 'testhbs/helpers/format-money';
-import Money from 'testhbs/utils/money';
+import formatMoneyHelper from 'formatmoney/helpers/format-money';
+import Money from 'formatmoney/utils/money';
 
 module('helper:format-money');
 

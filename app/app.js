@@ -4,10 +4,10 @@ import loadInitializers from 'ember/load-initializers';
 Ember.MODEL_FACTORY_INJECTIONS = true;
 
 var App = Ember.Application.extend({
-  modulePrefix: 'testhbs', // TODO: loaded via config
+  modulePrefix: 'formatmoney', // TODO: loaded via config
   Resolver: Resolver
 });
 
-loadInitializers(App, 'testhbs');
+loadInitializers(App, 'formatmoney');
 
 export default App;

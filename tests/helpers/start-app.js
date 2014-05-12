@@ -1,7 +1,7 @@
 /* global require */
 
-var Application = require('testhbs/app')['default'];
-var Router = require('testhbs/router')['default'];
+var Application = require('formatmoney/app')['default'];
+var Router = require('formatmoney/router')['default'];
 
 export default function startApp(attrs) {
   var App;
