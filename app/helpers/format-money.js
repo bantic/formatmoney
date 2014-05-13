@@ -1,4 +1,4 @@
-/*global numeral,console*/
+/*global numeral*/
 import Money from '../utils/money';
 
 /**
@@ -16,7 +16,6 @@ import Money from '../utils/money';
  *
  */
 export default Ember.Handlebars.registerBoundHelper('format-money', function(money, options) {
-  console.log('formatting some money!!!');
   var summarize = options.hash.summarize || false;
   var format = '$0,0.00';
 
@@ -36,8 +35,6 @@ export default Ember.Handlebars.registerBoundHelper('format-money', function(mon
       format = '$0,0.0a';
     }
   }
-
-  console.log('dollars',dollars,'format',format);
 
   return numeral(dollars).format(format);
 });
